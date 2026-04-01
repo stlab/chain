@@ -194,7 +194,7 @@ jobs:
             build/*-*${{ matrix.build_type }}*-*.*
 
       - name: Publish to codecov
-        uses: codecov/codecov-action@v5
+        uses: codecov/codecov-action@v6
         with:
           flags: ${{ runner.os }}
           name: ${{ runner.os }}-coverage
